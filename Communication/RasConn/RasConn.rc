@@ -1,0 +1,182 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Phonebook...",               IDM_FILE_PHONEBOOK
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "&Connection"
+    BEGIN
+        MENUITEM "&Connect",                    IDM_CONNECTION_CONNECT
+        MENUITEM "&Status...",                  IDM_CONNECTION_STATUS
+        MENUITEM SEPARATOR
+        MENUITEM "&Hange Up...",                IDM_CONNECTION_HANGUP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   IDM_HELP_ABOUT
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PHONEBOOK DIALOG DISCARDABLE  0, 0, 182, 119
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Phonebook Entries"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,12,99,79,14
+    PUSHBUTTON      "Cancel",IDCANCEL,91,99,79,14
+    LISTBOX         IDC_RASNAMES,7,7,168,48,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Use the current user name and password.",IDC_USECURRENT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,13,59,152,10
+    PUSHBUTTON      "Rename",IDC_RENAME,12,85,79,14
+    PUSHBUTTON      "Delete",IDC_DELETE,91,85,79,14
+    PUSHBUTTON      "Create",IDC_CREATE,12,71,79,14
+    PUSHBUTTON      "Copy",IDC_COPY,91,71,79,14
+END
+
+IDD_DIALING DIALOG DISCARDABLE  0, 0, 179, 114
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Dialing..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Hangup",IDC_HANGUP,87,93,50,14
+    LTEXT           "",IDC_STATUS,32,21,140,22
+    LTEXT           "Status:",IDC_STATIC,7,21,29,8
+    LTEXT           "",IDC_ERROR,58,49,114,8
+    LTEXT           "Error Info:",IDC_STATIC,7,49,56,8
+    LTEXT           "",IDC_DEVICETYPE,58,62,114,8
+    LTEXT           "Device Type:",IDC_STATIC,7,62,56,8
+    LTEXT           "",IDC_DEVICENAME,58,74,114,8
+    LTEXT           "Device Name:",IDC_STATIC,7,74,56,8
+    PUSHBUTTON      "Hide",IDC_HIDE,25,93,50,14
+    LTEXT           "WAIT....",IDC_PROGRESS,7,7,165,8
+END
+
+IDD_AUTHDLG DIALOG DISCARDABLE  0, 0, 174, 114
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Authentication"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_USERNAME,58,36,109,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,58,56,109,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DOMAIN,58,76,109,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,66,97,49,14
+    LTEXT           "User Name:",IDC_STATIC,7,39,48,8
+    LTEXT           "Password:",IDC_STATIC,7,58,50,8
+    LTEXT           "Domain:",IDC_STATIC,7,78,50,8
+    LTEXT           "Enter a user name and password with access to\nthe remote network domain.  The remote server\nmay not require entries in all three fields.",
+                    IDC_STATIC,7,7,160,26
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PHONEBOOK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_AUTHDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
